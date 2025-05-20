@@ -1,0 +1,631 @@
+@font-face {
+    font-family: "Bidena trial";
+    src: url("https://db.onlinewebfonts.com/t/dec54bf9723eb4c4a3d476765c688779.eot");
+    src: url("https://db.onlinewebfonts.com/t/dec54bf9723eb4c4a3d476765c688779.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/dec54bf9723eb4c4a3d476765c688779.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/dec54bf9723eb4c4a3d476765c688779.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/dec54bf9723eb4c4a3d476765c688779.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/dec54bf9723eb4c4a3d476765c688779.svg#Bidena trial")format("svg");
+}
+
+@font-face {
+    font-family: "Kotayk";
+    src: url("/Kotayk-italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Larrisha Script";
+    src: url("/Larrisha Script.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Vrdznagir";
+    src: url("/Vrdznagir.otf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hraver {
+    position: relative;
+    margin: auto;
+    max-width: 560px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.convert {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1100px;
+    position: fixed;
+    height: 100vh;
+    z-index: 99;
+}
+
+.converttop {
+    position: absolute;
+    top: 0;
+    width: 1100px;
+    height: 100vh;
+    z-index: 99;
+    transform: rotate(90deg) translateY(50px);
+    animation: opentop 2s linear forwards 0.5s;
+}
+
+.convertbody {
+    position: absolute;
+    top: 0;
+    width: 1100px;
+    height: 100vh;
+    transform: rotate(270deg) translateY(-50px);
+    z-index: 98;
+    animation: openbody 2s linear forwards 0.5s;
+}
+
+
+.audiobtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    color: white;
+    z-index: 1000 !important;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: none !important;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.audiobtn:hover {
+    opacity: 1;
+    transform: scale(1.1) !important;
+}
+
+.convert,
+.converttop,
+.convertbody {
+    pointer-events: none;
+}
+
+.audio-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+@keyframes opentop {
+    from {
+        transform: rotate(90deg) translateY(50px);
+    }
+
+    to {
+        transform: rotate(90deg) translateY(1000px);
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes openbody {
+    from {
+        transform: rotate(270deg) translateY(-50px);
+    }
+
+    to {
+        transform: rotate(270deg) translateY(1000px);
+        opacity: 0;
+        display: none;
+    }
+}
+
+/********************************************************/
+
+.header {
+    position: relative;
+    overflow: hidden;
+    max-width: 560px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transform: translateY(-150%);
+    box-shadow: inset 0px -300px 100px -30px rgba(50, 50, 50, 0.75);
+    animation: header 1.5s linear 1.5s forwards;
+}
+
+.headertext1 {
+    position: absolute;
+    top: 65%;
+    right: -80%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: text1 2s linear forwards 3s;
+}
+
+.headertext2 {
+    position: absolute;
+    bottom: -35%;
+    left: 50%;
+    font-size: 96px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: text2 2s linear forwards 3s;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Bidena trial", serif;
+}
+
+.headertext3 {
+    position: absolute;
+    top: 80%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation: text3 2s linear forwards 3s;
+}
+
+.date {
+    width: 400px;
+    text-align: center;
+    font-size: 36px;
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: "Kotayk", serif;
+    animation: date 2s linear forwards 3s;
+}
+
+.font {
+    color: white;
+    font-size: 76px;
+    font-family: "Bidena trial", serif;
+}
+
+@keyframes header {
+    from {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes text1 {
+    from {
+        right: -80%;
+    }
+
+    to {
+        right: -22%;
+    }
+}
+
+@keyframes text2 {
+    from {
+        bottom: -35%;
+    }
+
+    to {
+        bottom: 6%;
+    }
+}
+
+@keyframes text3 {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 35%;
+    }
+}
+
+@keyframes date {
+    from {
+        bottom: -10%;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        bottom: 5%;
+    }
+}
+
+/********************************************************/
+
+.later {
+    padding-top: 30px;
+    max-width: 560px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Kotayk", serif;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: 1s;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 40%, rgba(255, 255, 255, 0.05) 100%);
+}
+
+.later.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/********************************************************/
+
+.calendar {
+    margin-top: 10px;
+    max-width: 560px;
+    width: 100%;
+    position: relative;
+    opacity: 0;
+    transition: 0.4s;
+    transform: translateY(-10%);
+    text-align: center;
+}
+
+.ctext1 {
+    font-size: 68px;
+    font-family: "Larrisha Script", sans-serif;
+}
+
+.ctext2 {
+    font-size: 68px;
+    font-family: "Kotayk", serif;
+}
+
+#calendar {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    font-size: 26px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+    font-family: "Noto Serif Armenian", serif;
+}
+
+.hearth {
+    position: absolute;
+    top: -20%;
+    left: -42%;
+    z-index: 2;
+}
+
+.calendar.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+button {
+    z-index: 97;
+}
+
+/********************************************************/
+
+.times {
+    max-width: 560px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.time-untit {
+    max-height: 50px;
+}
+
+.num {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Noto Serif Armenian", serif;
+}
+
+.timeName {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Noto Serif Armenian", serif;
+}
+
+.times.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.timerhead {
+    font-family: "Noto Serif Armenian", serif;
+    font-weight: 800;
+}
+
+.timer {
+    max-width: 560px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.timer.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/********************************************************/
+
+.maps {
+    text-align: center;
+    max-width: 560px;
+    width: 100%;
+}
+
+.place {
+    position: relative;
+    max-width: 560px;
+    width: 100%;
+    min-height: 300px;
+    height: 320px;
+}
+
+#img {
+    margin-top: 30px;
+}
+
+.border {
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50% 50% 0 0;
+}
+
+.placeimg {
+    position: absolute;
+    top: 0%;
+    right: 20%;
+    width: 300px;
+    height: 300px;
+    z-index: 9;
+    border-radius: 50% 50% 0 0;
+}
+
+.placetexts {
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.placetext {
+    font-size: 18px;
+    font-family: "Noto Serif Armenian", serif;
+    font-weight: 400;
+}
+
+.placespan {
+    display: block;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: "Noto Serif Armenian", serif;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: 0.4s;
+}
+
+.map {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 15px 10px;
+    border-radius: 25.5px;
+    width: 150px;
+}
+
+.mapheader {
+    margin-top: 40px;
+    font-size: 46px;
+    font-family: "Kotayk", serif;
+}
+
+.card.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/********************************************************/
+
+.plans {
+    max-width: 560px;
+    width: 100%;
+}
+
+.plan {
+    margin: auto;
+    margin-top: 50px;
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(-5%);
+    transition: 0.4s;
+}
+
+.planimgs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.planimg {
+    width: 45px;
+    height: 65px;
+    border-radius: 22px;
+}
+
+.line {
+    display: block;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+}
+
+.plantext {
+    width: 85%;
+    font-family: "Noto Serif Armenian", serif;
+}
+
+.plantext1 {
+    font-size: 28px;
+    line-height: 20px;
+    font-family: "Larrisha Script", sans-serif;
+}
+
+h2 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.plantext>h2 {
+    margin: 4px;
+    font-weight: 1000;
+}
+
+.placetext > h3 {
+    font-weight: normal;
+}
+
+.plan.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/********************************************************/
+
+
+.footer {
+    position: relative;
+    overflow: hidden;
+    max-width: 560px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transform: translateY(-70%);
+    opacity: 0;
+    transition: 1.5s 0.3s;
+    box-shadow: inset 0px -500px 100px -30px rgba(50, 50, 50, 0.55);
+}
+
+.footertext1 {
+    position: absolute;
+    top: 55%;
+    right: -22%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.footertext2 {
+    position: absolute;
+    bottom: 16%;
+    left: 50%;
+    font-size: 96px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Bidena trial", serif;
+}
+
+.footertext3 {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.footertext4 {
+    width: 400px;
+    text-align: center;
+    font-size: 46px;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: "Vrdznagir", serif;
+}
+
+.footer.active {
+    transform: translateY(0);
+    opacity: 1;
+}
