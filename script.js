@@ -65,7 +65,7 @@ blocks.forEach(block => {
     if (block.textContent.trim() === "22") {
         const heart = document.createElement("div");
         heart.className = "hearth";
-        heart.style.backgroundImage = 'url("/heart.png")';
+        heart.style.backgroundImage = 'url("heart.png")';
         heart.style.width = '90px';
         heart.style.height = '90px';
         heart.style.backgroundSize = 'contain';
@@ -130,7 +130,7 @@ function updateTimer() {
     const timeLeft = calculateTimeLeft();
 
     if (!timeLeft) {
-        timerContainer.innerHTML = '<div style="font-size: 24px; color: red;">Время вышло!</div>';
+        timerContainer.innerHTML = '<div style="font-size: 24px; color: red;">Time over</div>';
         return;
     }
 
