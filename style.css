@@ -414,10 +414,11 @@ button {
     width: 100%;
     min-height: 300px;
     height: 320px;
+    z-index: 16;
 }
 
 #img {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .border {
@@ -467,7 +468,7 @@ button {
     justify-content: center;
     flex-direction: column;
     opacity: 0;
-    transform: translateY(-10%);
+    transform: translateY(-5%);
     transition: 1s;
 }
 
@@ -482,6 +483,7 @@ a {
     padding: 15px 10px;
     border-radius: 25.5px;
     width: 150px;
+    margin-bottom: 50px;
 }
 
 .mapheader {
@@ -491,6 +493,7 @@ a {
 }
 
 .card.active {
+    display: flex;
     transform: translateY(0);
     opacity: 1;
 }
@@ -652,4 +655,10 @@ h3 {
 .logo {
     margin: 0 auto;
     width: 50%;
+}
+
+@media screen and (min-width : 480px) {
+    .hearth {
+        width: 40px;
+    }
 }
