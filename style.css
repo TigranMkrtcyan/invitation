@@ -57,7 +57,7 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 40%;
+    width: 50%;
     height: 100vh;
     z-index: 99;
     transform: translateX(-40%);
@@ -68,7 +68,7 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 50%;
+    width: 40%;
     height: 100vh;
     transform: translateX(-50%);
     z-index: 98;
@@ -147,7 +147,7 @@ body {
     max-width: 480px;
     width: 100%;
     height: 100vh;
-    background-image: url(1.png);
+    background-image: url(1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -663,17 +663,25 @@ h3 {
 }
 
 @media screen and (max-width : 600px) {
+    .converttop {
+        width: 130%;
+    }
+
+    .convertbody {
+        width: 100%;
+    }
+
     .headertext1 {
-        right: -80%;
+        right: -200%;
         animation: text1_2 2s linear forwards 3s;
     }
-    
+
     .headertext2 {
         animation: text2_2 2s linear forwards 3s;
     }
 
     .headertext3 {
-        left: 70%;
+        left: -225%;
         animation: text3_2 2s linear forwards 3s;
     }
 
@@ -682,11 +690,11 @@ h3 {
     }
 
     .border {
-        left: 5%;
+        left: 15%;
     }
 
     .placeimg {
-        right: 5%;
+        right: 15%;
     }
 
     .footertext1 {
@@ -702,11 +710,16 @@ h3 {
     }
 
     .latetext2 {
-        max-width: 310px;
+        font-size: 20px;
+        max-width: 390px;
     }
 
     .ayan {
         font-size: 24px;
+    }
+
+    .ctext2 {
+        font-size: 42px;
     }
 
     @keyframes text1_2 {
@@ -715,7 +728,7 @@ h3 {
         }
 
         to {
-            right: -35%;
+            right: -20%;
         }
     }
 
@@ -731,11 +744,11 @@ h3 {
 
     @keyframes text3_2 {
         from {
-            left: -50%;
+            left: -225%;
         }
 
         to {
-            left: 50%;
+            left: 45%;
         }
     }
 
