@@ -690,15 +690,23 @@ h3 {
     }
 
     .footertext1 {
-        right: -35%;
+        right: -25%;
     }
 
     .footertext2 {
-        bottom: 16%;
+        bottom: 18%;
     }
 
     .footertext3 {
         left: 50%;
+    }
+
+    .latetext2 {
+        max-width: 310px;
+    }
+
+    .ayan {
+        font-size: 24px;
     }
 
     @keyframes text1_2 {
