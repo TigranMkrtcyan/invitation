@@ -36,7 +36,7 @@ body {
 .hraver {
     position: relative;
     margin: auto;
-    max-width: 560px;
+    max-width: 480px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 1100px;
+    width: 100%;
     position: fixed;
     height: 100vh;
     z-index: 99;
@@ -56,19 +56,21 @@ body {
 .converttop {
     position: absolute;
     top: 0;
-    width: 1100px;
+    left: 50%;
+    width: 40%;
     height: 100vh;
     z-index: 99;
-    transform: rotate(90deg) translateY(50px);
+    transform: translateX(-40%);
     animation: opentop 2s linear forwards 0.5s;
 }
 
 .convertbody {
     position: absolute;
     top: 0;
-    width: 1100px;
+    left: 50%;
+    width: 50%;
     height: 100vh;
-    transform: rotate(270deg) translateY(-50px);
+    transform: translateX(-50%);
     z-index: 98;
     animation: openbody 2s linear forwards 0.5s;
 }
@@ -115,11 +117,11 @@ body {
 
 @keyframes opentop {
     from {
-        transform: rotate(90deg) translateY(50px);
+        transform: translateX(-50%);
     }
 
     to {
-        transform: rotate(90deg) translateY(1000px);
+        transform: translateX(-1000px);
         opacity: 0;
         display: none;
     }
@@ -127,11 +129,11 @@ body {
 
 @keyframes openbody {
     from {
-        transform: rotate(270deg) translateY(-50px);
+        transform: translateX(-50%);
     }
 
     to {
-        transform: rotate(270deg) translateY(1000px);
+        transform: translateX(1000px);
         opacity: 0;
         display: none;
     }
@@ -142,22 +144,21 @@ body {
 .header {
     position: relative;
     overflow: hidden;
-    max-width: 560px;
+    max-width: 480px;
     width: 100%;
     height: 100vh;
-    background-image: url(1.jpg);
+    background-image: url(1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
     transform: translateY(-150%);
-    box-shadow: inset 0px -300px 100px -30px rgba(50, 50, 50, 0.75);
     animation: header 1.5s linear 1.5s forwards;
 }
 
 .headertext1 {
     position: absolute;
-    top: 65%;
+    top: 55%;
     right: -80%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -178,7 +179,7 @@ body {
 
 .headertext3 {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: -50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -232,7 +233,7 @@ body {
     }
 
     to {
-        bottom: 6%;
+        bottom: 18%;
     }
 }
 
@@ -254,7 +255,7 @@ body {
 
     to {
         opacity: 1;
-        bottom: 5%;
+        bottom: 15%;
     }
 }
 
@@ -262,7 +263,7 @@ body {
 
 .later {
     padding-top: 30px;
-    max-width: 560px;
+    max-width: 480px;
     width: 100%;
     height: 250px;
     display: flex;
@@ -274,7 +275,7 @@ body {
     transform: translateY(-10%);
     opacity: 0;
     transition: 1s;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 40%, rgba(255, 255, 255, 0.05) 100%);
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 40%, rgba(255, 255, 255, 0.05) 100%); */
 }
 
 .later.active {
@@ -285,12 +286,11 @@ body {
 /********************************************************/
 
 .calendar {
-    margin-top: 10px;
-    max-width: 560px;
+    max-width: 480px;
     width: 100%;
     position: relative;
     opacity: 0;
-    transition: 0.4s;
+    transition: 1s;
     transform: translateY(-10%);
     text-align: center;
 }
@@ -346,7 +346,7 @@ button {
 /********************************************************/
 
 .times {
-    max-width: 560px;
+    max-width: 480px;
     width: 80%;
     text-align: center;
     display: flex;
@@ -354,7 +354,7 @@ button {
     justify-content: space-between;
     transform: translateY(-10%);
     opacity: 0;
-    transition: 0.4s;
+    transition: 1s;
 }
 
 .time-untit {
@@ -384,7 +384,7 @@ button {
 }
 
 .timer {
-    max-width: 560px;
+    max-width: 480px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -392,7 +392,7 @@ button {
     flex-direction: column;
     transform: translateY(-10%);
     opacity: 0;
-    transition: 0.4s;
+    transition: 1s;
 }
 
 .timer.active {
@@ -404,13 +404,13 @@ button {
 
 .maps {
     text-align: center;
-    max-width: 560px;
+    max-width: 480px;
     width: 100%;
 }
 
 .place {
     position: relative;
-    max-width: 560px;
+    max-width: 480px;
     width: 100%;
     min-height: 300px;
     height: 320px;
@@ -443,7 +443,7 @@ button {
 
 .placetexts {
     margin: auto;
-    max-width: 500px;
+    max-width: 480px;
     width: 100%;
     text-align: center;
 }
@@ -468,13 +468,16 @@ button {
     flex-direction: column;
     opacity: 0;
     transform: translateY(-10%);
-    transition: 0.4s;
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .map {
     text-align: center;
-    text-decoration: none;
-    color: black;
     border: 1px solid black;
     padding: 15px 10px;
     border-radius: 25.5px;
@@ -495,7 +498,7 @@ button {
 /********************************************************/
 
 .plans {
-    max-width: 560px;
+    max-width: 480px;
     width: 100%;
 }
 
@@ -509,7 +512,7 @@ button {
     gap: 10px;
     opacity: 0;
     transform: translateY(-5%);
-    transition: 0.4s;
+    transition: 1s;
 }
 
 .planimgs {
@@ -544,6 +547,11 @@ button {
     font-family: "Larrisha Script", sans-serif;
 }
 
+.plantext2 {
+    font-weight: 400;
+    color: rgb(68, 68, 68);
+}
+
 h2 {
     margin: 0;
 }
@@ -557,7 +565,7 @@ h3 {
     font-weight: 1000;
 }
 
-.placetext > h3 {
+.placetext>h3 {
     font-weight: normal;
 }
 
@@ -572,18 +580,17 @@ h3 {
 .footer {
     position: relative;
     overflow: hidden;
-    max-width: 560px;
+    max-width: 480px;
     width: 100%;
-    height: 100vh;
-    background-image: url(2.jpg);
+    height: 115vh;
+    background-image: url(2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 0;
     transform: translateY(-70%);
     opacity: 0;
     transition: 1.5s 0.3s;
-    box-shadow: inset 0px -500px 100px -30px rgba(50, 50, 50, 0.55);
 }
 
 .footertext1 {
@@ -626,6 +633,23 @@ h3 {
 }
 
 .footer.active {
-    transform: translateY(0);
+    transform: translateY(0%);
     opacity: 1;
+}
+
+.ayan {
+    max-width: 480px;
+    width: 100%;
+    color: #DEDAD5;
+    font-family: "Vrdznagir", serif;
+    font-size: 30px;
+    line-height: 100px;
+    text-align: center;
+    z-index: 88;
+    text-shadow: 0px 0px rgb(255, 255, 255);
+}
+
+.logo {
+    margin: 0 auto;
+    width: 50%;
 }
