@@ -313,7 +313,7 @@ body {
 }
 
 .later.active {
-    transform: translateY(-10%);
+    transform: translateY(-5%);
     opacity: 1;
 }
 
