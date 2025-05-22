@@ -262,6 +262,7 @@ body {
 /********************************************************/
 
 .later {
+    margin: auto;
     padding-top: 30px;
     max-width: 410px;
     width: 100%;
@@ -290,6 +291,7 @@ body {
 /********************************************************/
 
 .calendar {
+    margin: auto;
     max-width: 380px;
     width: 100%;
     position: relative;
@@ -297,6 +299,7 @@ body {
     transition: 1s;
     transform: translateY(-10%);
     text-align: center;
+
 }
 
 .ctext1 {
@@ -305,12 +308,12 @@ body {
 }
 
 .ctext2 {
+    margin: auto;
     font-size: 48px;
     font-family: "Kotayk", serif;
 }
 
 #calendar {
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(7, auto);
 }
