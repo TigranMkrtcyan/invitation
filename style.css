@@ -297,7 +297,6 @@ body {
 
 .later {
     margin: auto;
-    padding-top: 30px;
     max-width: 410px;
     width: 100%;
     height: 250px;
@@ -307,14 +306,14 @@ body {
     flex-direction: column;
     text-align: center;
     color: black;
-    transform: translateY(-10%);
+    transform: translateY(-20%);
     opacity: 0;
     transition: 1s;
     /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 40%, rgba(255, 255, 255, 0.05) 100%); */
 }
 
 .later.active {
-    transform: translateY(0);
+    transform: translateY(-10%);
     opacity: 1;
 }
 
@@ -328,6 +327,7 @@ body {
 
 .latetext2 {
     font-family: "Noto Sans Armenian";
+    transform: translateY(-5%);
     font-size: 22px;
     font-weight: 200;
 }
@@ -709,6 +709,11 @@ h3 {
     transform: translateY(-30%);
     opacity: 0;
     transition: 1s;
+    line-height: 0;
+}
+
+.ayan > h2 {
+    line-height: 50px;
 }
 
 .logo {
@@ -720,13 +725,13 @@ h6 {
     font-family: "Noto Serif Armenian";
     font-size: 12px;
     line-height: 0px;
-    font-weight: 100;
+    font-weight: 500;
     color: #A1A1AA63;
 }
 
 .ayan.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(10%);
 }
 
 @media screen and (max-width : 600px) {
@@ -754,7 +759,7 @@ h6 {
 
     .latetext2 {
         width: 90%;
-        font-size: 16px;
+        font-size: 21px;
     }
 
     .calendar {
