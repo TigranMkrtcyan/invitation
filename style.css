@@ -27,11 +27,40 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url(image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .bg {
+    max-width: 100%;
+    width: 100%;
     background-image: url(bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.bg1 {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    background-image: url(bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg2 {
+    max-width: 480px;
+    width: 100%;
+    height: 100%;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
 
 .hraver {
     position: relative;
@@ -659,7 +688,7 @@ h3 {
     line-height: 100px;
     text-align: center;
     z-index: 1;
-    background: linear-gradient(rgba(0, 0, 0, 0.2) 100%, rgba(255, 255, 255, 0.05) 30%);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2) 100%, rgba(255, 255, 255, 0.05) 30%); */
     backdrop-filter: blur(10px);
     transform: translateY(-30%);
     opacity: 0;
@@ -668,11 +697,15 @@ h3 {
 
 .logo {
     width: 30%;
-    transform: translateY(-30%);
+    transform: translateY(-35%);
 }
 
 h6 {
+    font-family: "Noto Serif Armenian", serif;
+    font-size: 12px;
     line-height: 0px;
+    font-weight: 100;
+    color: #A1A1AA63;
 }
 
 .ayan.active {
@@ -704,19 +737,40 @@ h6 {
     }
 
     .latetext2 {
+        width: 90%;
         font-size: 16px;
     }
 
     .calendar {
-        max-width: 300px;
+        margin: auto;
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .placetext {
+        margin: auto;
+        width: 90%;
     }
 
     .block {
-        font-size: 16px;
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .ctext1 {
+        font-size: 50px;
+    }
+
+    .ctext2 {
+        font-size: 36px;
+        margin-bottom: 30px;
     }
 
     .hearth {
-        left: -10%;
+        width: 40px  !important;
+        /* top: -10%; */
+        left: -5%;
     }
 
     .border {
@@ -741,10 +795,6 @@ h6 {
 
     .ayan {
         font-size: 24px;
-    }
-
-    .ctext2 {
-        font-size: 42px;
     }
 
     @keyframes text1_2 {
