@@ -188,6 +188,7 @@ body {
     z-index: 1;
     transform: translateY(-150%);
     animation: header 1.5s linear 1.5s forwards;
+    margin-bottom: 10px;
 }
 
 .headertext1 {
@@ -313,7 +314,7 @@ body {
 }
 
 .later.active {
-    transform: translateY(-5%);
+    transform: translateY(0);
     opacity: 1;
 }
 
@@ -646,9 +647,7 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 34;
-    transform: translateY(-70%);
-    opacity: 0;
-    transition: 1.5s 0.3s;
+    margin-bottom: 20px;
 }
 
 .footertext1 {
@@ -690,30 +689,21 @@ h3 {
     font-family: "Vrdznagir";
 }
 
-.footer.active {
-    transform: translateY(0%);
-    opacity: 1;
-}
-
 .ayan {
     max-width: 480px;
     width: 100%;
     color: #DEDAD5;
     font-family: "Vrdznagir";
     font-size: 30px;
-    line-height: 100px;
+    /* line-height: 100px; */
     text-align: center;
-    z-index: 1;
     /* background: linear-gradient(rgba(0, 0, 0, 0.2) 100%, rgba(255, 255, 255, 0.05) 30%); */
     backdrop-filter: blur(10px);
-    transform: translateY(-30%);
-    opacity: 0;
-    transition: 1s;
-    line-height: 0;
+    /* transform: translateY(10%); */
 }
 
 .ayan > h2 {
-    line-height: 50px;
+    /* line-height: 50px; */
 }
 
 .logo {
@@ -724,15 +714,22 @@ h3 {
 h6 {
     font-family: "Noto Serif Armenian";
     font-size: 12px;
-    line-height: 0px;
+    line-height: 0px !important;
     font-weight: 500;
     color: #A1A1AA63;
 }
 
-.ayan.active {
-    opacity: 1;
-    transform: translateY(10%);
+.foot {
+    transform: translateY(-70%);
+    opacity: 0;
+    transition: 1.5s 0.3s;
 }
+
+.foot.active {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
 
 @media screen and (max-width : 600px) {
     .converttop {
