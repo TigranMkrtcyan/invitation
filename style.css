@@ -23,6 +23,11 @@
     src: url("Vrdznagir.otf") format("truetype");
 }
 
+@font-face {
+    font-family: "Kotayk-Regular";
+    src: url("Kotayk-Regular.ttf") format("truetype");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -203,7 +208,7 @@ body {
     z-index: 1;
     animation: text2 2s linear forwards 3s;
     color: rgba(255, 255, 255, 0.5);
-    font-family: "Bidena trial", serif;
+    font-family: "Bidena trial";
 }
 
 .headertext3 {
@@ -224,14 +229,14 @@ body {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-family: "Kotayk", serif;
+    font-family: "Kotayk";
     animation: date 2s linear forwards 3s;
 }
 
 .font {
     color: white;
     font-size: 76px;
-    font-family: "Bidena trial", serif;
+    font-family: "Bidena trial";
 }
 
 @keyframes header {
@@ -301,7 +306,7 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    font-family: "Kotayk", sans-serif;
+    color: black;
     transform: translateY(-10%);
     opacity: 0;
     transition: 1s;
@@ -313,8 +318,18 @@ body {
     opacity: 1;
 }
 
+.latetext1 {
+    font-family: 'Kotayk-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 136%;
+}
+
 .latetext2 {
+    font-family: "Noto Sans Armenian";
     font-size: 22px;
+    font-weight: 200;
 }
 
 /********************************************************/
@@ -332,14 +347,15 @@ body {
 }
 
 .ctext1 {
+    line-height: 50%;
     font-size: 68px;
-    font-family: "Larrisha Script", sans-serif;
+    font-family: "Larrisha Script";
 }
 
 .ctext2 {
     margin: auto;
     font-size: 48px;
-    font-family: "Kotayk", serif;
+    font-family: "Kotayk";
 }
 
 #calendar {
@@ -354,13 +370,13 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     text-align: center;
 }
 
 .name {
     text-align: center;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Noto Serif Armenian";
 }
 
 .hearth {
@@ -400,13 +416,13 @@ button {
 .num {
     font-size: 40px;
     font-weight: 700;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Noto Serif Armenian";
 }
 
 .timeName {
     font-size: 20px;
     font-weight: 400;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Noto Serif Armenian";
 }
 
 .times.active {
@@ -415,7 +431,7 @@ button {
 }
 
 .timerhead {
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Noto Serif Armenian";
     font-weight: 800;
 }
 
@@ -489,7 +505,7 @@ button {
 
 .placetext {
     font-size: 18px;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Noto Serif Armenian";
     font-weight: 400;
 }
 
@@ -497,7 +513,7 @@ button {
     display: block;
     font-size: 18px;
     font-weight: 900;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Noto Serif Armenian";
 }
 
 .card {
@@ -527,7 +543,7 @@ a {
 .mapheader {
     margin-top: 40px;
     font-size: 46px;
-    font-family: "Kotayk", serif;
+    font-family: "Kotayk";
 }
 
 .card.active {
@@ -580,13 +596,13 @@ a {
 
 .plantext {
     width: 85%;
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Noto Serif Armenian";
 }
 
 .plantext1 {
     font-size: 28px;
     line-height: 20px;
-    font-family: "Larrisha Script", sans-serif;
+    font-family: "Larrisha Script";
 }
 
 .plantext2 {
@@ -651,7 +667,7 @@ h3 {
     transform: translate(-50%, -50%);
     z-index: 1;
     color: rgba(255, 255, 255, 0.5);
-    font-family: "Bidena trial", serif;
+    font-family: "Bidena trial";
 }
 
 .footertext3 {
@@ -671,7 +687,7 @@ h3 {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-family: "Vrdznagir", serif;
+    font-family: "Vrdznagir";
 }
 
 .footer.active {
@@ -683,7 +699,7 @@ h3 {
     max-width: 480px;
     width: 100%;
     color: #DEDAD5;
-    font-family: "Vrdznagir", serif;
+    font-family: "Vrdznagir";
     font-size: 30px;
     line-height: 100px;
     text-align: center;
@@ -701,7 +717,7 @@ h3 {
 }
 
 h6 {
-    font-family: "Noto Serif Armenian", serif;
+    font-family: "Noto Serif Armenian";
     font-size: 12px;
     line-height: 0px;
     font-weight: 100;
@@ -768,7 +784,7 @@ h6 {
     }
 
     .hearth {
-        width: 40px  !important;
+        width: 40px !important;
         /* top: -10%; */
         left: -5%;
     }
