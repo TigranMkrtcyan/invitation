@@ -549,7 +549,7 @@ a {
 
 .card.active {
     display: flex;
-    transform: translateY(0);
+    transform: translateY(-5%);
     opacity: 1;
 }
 
@@ -569,7 +569,7 @@ a {
     align-items: center;
     gap: 10px;
     opacity: 0;
-    transform: translateY(-5%);
+    transform: translateY(0);
     transition: 1s;
 }
 
@@ -702,7 +702,7 @@ h3 {
     /* transform: translateY(10%); */
 }
 
-.ayan > h2 {
+.ayan>h2 {
     /* line-height: 50px; */
 }
 
@@ -720,7 +720,7 @@ h6 {
 }
 
 .foot {
-    transform: translateY(-70%);
+    transform: translateY(-60%);
     opacity: 0;
     transition: 1.5s 0.3s;
 }
@@ -767,7 +767,7 @@ h6 {
 
     .placetext {
         margin: auto;
-        width: 90%;
+        width: 95%;
     }
 
     .block {
@@ -791,6 +791,10 @@ h6 {
         left: -5%;
     }
 
+    .placetexts {
+        font-size: 13px !important;
+    }
+    
     .border {
         left: 10%;
     }
