@@ -518,7 +518,7 @@ button {
 }
 
 .card {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -538,7 +538,8 @@ a {
     padding: 15px 10px;
     border-radius: 25.5px;
     width: 150px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .mapheader {
@@ -548,7 +549,6 @@ a {
 }
 
 .card.active {
-    display: flex;
     transform: translateY(-5%);
     opacity: 1;
 }
@@ -720,7 +720,7 @@ h6 {
 }
 
 .foot {
-    transform: translateY(-60%);
+    transform: translateY(-50%);
     opacity: 0;
     transition: 1.5s 0.3s;
 }
@@ -767,7 +767,7 @@ h6 {
 
     .placetext {
         margin: auto;
-        width: 95%;
+        width: 90%;
     }
 
     .block {
@@ -792,7 +792,7 @@ h6 {
     }
 
     .placetexts {
-        font-size: 13px !important;
+        font-size: 14px !important;
     }
     
     .border {
